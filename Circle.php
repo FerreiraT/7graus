@@ -1,3 +1,5 @@
+<?php
+
 class Circle extends Shape
 {
     public const TYPE = 3;

@@ -1,3 +1,4 @@
+<?php
 
 interface InterfaceShape{
     public function calculateArea();
