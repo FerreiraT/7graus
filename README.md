@@ -7,7 +7,7 @@ This repository contains 5 files:
 2. Rectangle.php
 3. Circle.php
 4. index.php
-5 Readme.md
+5. Readme.md
 
 Shape is a class to define a geometric form and a method to calculate it's area. It also defines a method to return a clone of the object.
 
