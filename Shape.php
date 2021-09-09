@@ -25,7 +25,7 @@ class Shape implements InterfaceShape
         return $this->length * $this->width;
     }
 
-    public function setId()
+    public function setId(?string $type = null)
     {
         $newId = random_bytes(23);
         $this->id = bin2hex($newId);

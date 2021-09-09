@@ -8,6 +8,7 @@ class Circle extends Shape
     {
         parent::__construct(0, 0);
         $this->radius = $radius;
+        $this->setId();
     }
 
     public function calculateArea() :float
@@ -23,5 +24,20 @@ class Circle extends Shape
         $obj->id = $this->id;
         
         return $obj;
+    }
+
+    public function setId(?string $type = null)
+    {
+        switch($type)
+        {
+            case "uuid":
+                $this->id = uniqid();
+                break;
+            case "time":
+                $this->id = time();
+            default:
+                $newId = random_bytes(23);
+                $this->id = bin2hex($newId);
+        }
     }
 }
