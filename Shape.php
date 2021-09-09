@@ -1,7 +1,7 @@
 
 interface InterfaceShape{
     public function calculateArea();
-    public function cloneShape();
+    public function getClone();
 }
 
 class Shape implements InterfaceShape
